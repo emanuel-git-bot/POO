@@ -1,0 +1,22 @@
+
+=================
+COMANDOS GIT
+=================
+cd desktop
+git status
+git add -u 
+git add .
+git commit -m ""
+git push origin main
+__________________
+
+COMANDOS ANGULAR
+__________________________
+
+npm i -g @angular/cli    //para instalar o angular  
+ng new NomeDoProjeto     //para Iniciar um Projeto
+ng serve
+ng generate component pages/NomeDaPasta
+
+-- <router-outlet></router-outlet>
+__________________________
