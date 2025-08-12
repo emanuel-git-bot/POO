@@ -17,6 +17,15 @@ npm i -g @angular/cli    //para instalar o angular
 ng new NomeDoProjeto     //para Iniciar um Projeto
 ng serve
 ng generate component pages/NomeDaPasta
+ng generate component pages/soma --standalone
 
 -- <router-outlet></router-outlet>
 __________________________
+
+
+PASTAS
+src/app
+src/assets
+src/environments
+src/core
+src/services
