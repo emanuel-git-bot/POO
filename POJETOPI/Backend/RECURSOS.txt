@@ -1,0 +1,24 @@
+# 'minhaloja' é o nome do seu projeto, você pode mudar
+django-admin startproject minhaloja .
+
+# 'core' é o nome do seu app
+python manage.py startapp core
+
+# Cria os arquivos de migração para o seu app 'core'
+python manage.py makemigrations core
+
+# Aplica as migrações, criando as tabelas no banco de dados
+python manage.py migrate
+
+python manage.py createsuperuser
+
+python manage.py runserver
+
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+
+
+
+
+drf_spectacular //bibloteca api documentação
