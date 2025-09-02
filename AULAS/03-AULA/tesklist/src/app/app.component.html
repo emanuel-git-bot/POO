@@ -1,0 +1,24 @@
+<div style="text-align: center;">
+  <h1>TASK List</h1>
+
+  <div>
+    <input type="text" [(ngModel)]="newTask" placeholder="Digite uma nova tarefa...">
+    <button (click)="addTask()">Adicionar</button>
+  </div>
+
+</div>
+
+
+<div style="text-align: center;">
+  
+  <ul>
+    
+    <li class="mouse" *ngFor="let task of tasks; let i = index">
+      <input type="checkbox" [checked]="task.completed" (change)="toggleCompleted(task)">
+      <span [ngClass]="{'completed': task.completed}">
+        {{ task.text }}
+      </span>
+      <button style="border-radius: 5px; border-color: rgb(255, 240, 240); background-color: crimson; color: rgb(253, 253, 253);" class="remove-btn" (click)="removeTask(i)">X</button>
+    </li>
+  </ul>
+</div>

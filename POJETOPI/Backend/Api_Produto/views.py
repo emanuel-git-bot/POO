@@ -9,13 +9,13 @@ class ProdutoViewSet(viewsets.ModelViewSet):
     queryset = Produto.objects.all()
     serializer_class = ProdutoSerializer
 
-    def get_permissions(self):
-        """
-        Instancia e retorna a lista de permissões que esta view requer.
-        """
-        if self.action == 'list' or self.action == 'retrieve':
-            permission_classes = [permissions.AllowAny]
-        else:
-            permission_classes = [permissions.IsAdminUser]
-        return [permission() for permission in permission_classes]
+    # def get_permissions(self):
+    #     """
+    #     Instancia e retorna a lista de permissões que esta view requer.
+    #     """
+    #     if self.action == 'list' or self.action == 'retrieve':
+    #         permission_classes = [permissions.AllowAny]
+    #     else:
+    #         permission_classes = [permissions.IsAdminUser]
+    #     return [permission() for permission in permission_classes]
     

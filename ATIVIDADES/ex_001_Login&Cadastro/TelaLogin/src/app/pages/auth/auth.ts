@@ -15,6 +15,7 @@ interface Usuario{
   templateUrl: './auth.html',
   styleUrl: './auth.css'
 })
+
 export class Auth implements OnInit {
   form!: FormGroup;
   isLoginMode = true;
